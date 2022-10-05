@@ -1,0 +1,177 @@
+.body {
+    margin: 2%;
+    font-family: Epilogue;
+}
+
+
+/*Nav bar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Left nav*/
+
+.navbar .left-nav {
+    display: flex;
+}
+
+.navbar .left-nav .logo {
+    margin-top: 4%;
+}
+
+.list {
+    display: flex;
+}
+
+.dropdown {
+    display: flex;
+}
+
+.list .dropdown .company {
+    margin-left: -2rem;
+}
+
+.list .none-drop {
+    display: flex;
+    margin-left: -2rem;
+}
+
+.list .none-drop .about {
+    margin-left: -2rem;
+}
+
+.navbar .left-nav .list ul li {
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.navbar .left-nav ul li a {
+    text-decoration: none;
+    justify-content: space-between;
+    color: #000;
+}
+
+.navbar .left-nav .dropdown:hover .feature {
+    background-color: gray;
+}
+
+.navbar .left-nav .dropdown:hover .company {
+    background-color: gray;
+}
+
+
+/*dropdown*/
+
+
+/*Main Section*/
+
+.main {
+    display: flex;
+    margin-top: 2%;
+}
+
+
+/*Left Section*/
+
+.main .leftsection {
+    width: 50%;
+    height: 100%;
+    padding: 10%;
+}
+
+.main .learnMore p {
+    width: 20%;
+    border-radius: .5rem;
+    background-color: whitesmoke;
+    border: .1rem solid black;
+    text-align: center;
+    padding: 2%;
+    margin-top: 10%;
+}
+
+.main .display {
+    display: flex;
+    margin-top: 15%;
+    justify-content: space-between;
+}
+
+
+/*Right Section*/
+
+.rightsection {
+    width: 50%;
+    height: 100%;
+}
+
+
+/*Responsiveness*/
+
+@media screen and (max-width:375px) {
+    .body {
+        display: block;
+        width: 100%;
+    }
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    .navbar .left-nav {
+        display: block;
+    }
+    .list {
+        display: inline-block;
+    }
+    .list .dropdown {
+        display: block;
+    }
+    .list .dropdown .company {
+        margin-top: -1rem;
+        margin-left: -1rem;
+    }
+    .list .none-drop {
+        display: block;
+        margin-top: -1rem;
+    }
+    .navbar .left-nav .list ul li {
+        display: block;
+    }
+    .navbar .right-nav {
+        display: block;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .navbar .right-nav .register {
+        text-align: center;
+        margin: 0 45% 0 20%;
+    }
+    .main {
+        display: block;
+    }
+    .main .leftsection {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .main .display {
+        display: block;
+        justify-content: space-between;
+    }
+    .main .learnMore p {
+        width: 50%;
+        border-radius: .5rem;
+        background-color: whitesmoke;
+        border: .1rem solid black;
+        text-align: center;
+        padding: 2%;
+        margin-left: 25%;
+    }
+    .main .rightsection {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
